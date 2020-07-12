@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<title>关于ConcurrentHashMap - Shelton's Blog</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="https://cxccao.github.io/2020/07/11/%E5%85%B3%E4%BA%8EConcurrentHashMap/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<meta name="description" content="关于ConcurrentHashMapConcurrentHashMap如何保证线程安全？JDK1.7Segment数组+HashEntry数组+链表。Segment继承了ReentrantLock，所以Segment扮演了可重入锁的角色。一个ConcurrentHashMap包含一个Segment数组，一个Segment包含一个HashEntry数组。当对HashEntry数组的数据进行修改时，">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于ConcurrentHashMap">
+<meta property="og:url" content="https://cxccao.github.io/2020/07/11/%E5%85%B3%E4%BA%8EConcurrentHashMap/index.html">
+<meta property="og:site_name" content="Shelton&#39;s Blog">
+<meta property="og:description" content="关于ConcurrentHashMapConcurrentHashMap如何保证线程安全？JDK1.7Segment数组+HashEntry数组+链表。Segment继承了ReentrantLock，所以Segment扮演了可重入锁的角色。一个ConcurrentHashMap包含一个Segment数组，一个Segment包含一个HashEntry数组。当对HashEntry数组的数据进行修改时，">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cxccao.github.io/2020/07/11/%E5%85%B3%E4%BA%8EConcurrentHashMap/avatar.jpg">
+<meta property="article:published_time" content="2020-07-11T07:11:46.000Z">
+<meta property="article:modified_time" content="2020-07-11T08:53:01.429Z">
+<meta property="article:author" content="Shelton Chen">
+<meta property="article:tag" content="Java集合">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cxccao.github.io/2020/07/11/%E5%85%B3%E4%BA%8EConcurrentHashMap/avatar.jpg">
+
+
+<link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.e4c22be5bb2c26eab146.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/theme.5f886c7c7341bc6544e3.css" is="theme">
+
+
+<script src="/config.17121bfa18753f375fb5.js"></script>
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body lang="zh-Hans">
+<is-a></is-a>
+<script src="/runtime.1720a40670866f12654e.js"></script>
+<script src="/polyfills.69a7b8a907a7ac9da988.js"></script>
+<script src="/main.12c3a04fa47641f902c2.js"></script>
+</body>
+</html>
